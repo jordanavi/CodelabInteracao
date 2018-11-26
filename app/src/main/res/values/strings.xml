@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">DroidCafe</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Droid Café</string>
+    <string name="action_settings">Configurações</string>
     <string name="intro_text">Sobremesas Droid</string>
-    <string name="donuts_s_o_vitrificados_e_polvilhados_com_doces">Donuts são vitrificados e polvilhados com doces</string>
+    <string name="donuts_s_o_vitrificados_e_polvilhados_com_doces">Donuts são vitrificados e polvilhados com doces.</string>
     <string name="ice_cream_t_m_wafers_de_chocolate_e_recheio_de_baunilha">Ice Cream têm wafers de chocolate e recheio de baunilha.</string>
-    <string name="froyo_iogurte_congelado_self_service_premium">FroYo é iogurte congelado self-service premium</string>
+    <string name="froyo_iogurte_congelado_self_service_premium">FroYo é iogurte congelado self-service premium.</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
 </resources>
