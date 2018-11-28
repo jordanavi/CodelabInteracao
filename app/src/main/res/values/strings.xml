@@ -11,4 +11,15 @@
     <string name="textview">TextView</string>
     <string name="name">Name</string>
     <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="same_day_messenger_service">Serviço de envio no mesmo dia</string>
+    <string name="next_day_ground_delivery">Entrega no dia seguinte</string>
+    <string name="pick_up">Retirar na loja</string>
+    <string name="enter_phone_hint">Digite seu número de telefone</string>
+
+    <string-array name="labels_array">
+        <item>Casa</item>
+        <item>Trabalho</item>
+        <item>Celular</item>
+        <item>Outro</item>
+    </string-array>
 </resources>

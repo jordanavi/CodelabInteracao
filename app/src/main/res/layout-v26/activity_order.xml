@@ -22,14 +22,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/digite_seu_nome"
+        android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/name_label"
         app:layout_constraintStart_toEndOf="@+id/name_label"
-        android:inputType="textPersonName"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="56dp"
-        android:autofillHints="" />
+        tools:layout_editor_absoluteY="56dp" />
 
     <TextView
         android:id="@+id/address_label"
@@ -70,17 +70,15 @@
 
     <EditText
         android:id="@+id/phone_text"
-        android:layout_width="wrap_content"
+        android:layout_width="137dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:hint="Digite seu número de telefone"
         android:ems="10"
+        android:hint="@string/enter_phone_hint"
         android:inputType="phone"
         app:layout_constraintBaseline_toBaselineOf="@+id/phone_label"
-        app:layout_constraintStart_toEndOf="@+id/phone_label"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="163dp" />
+        app:layout_constraintStart_toEndOf="@+id/phone_label" />
 
     <TextView
         android:id="@+id/Email"
@@ -98,8 +96,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:hint="Digite seu email"
         android:ems="10"
+        android:hint="Digite seu email"
         android:inputType="textEmailAddress"
         app:layout_constraintBaseline_toBaselineOf="@+id/Email"
         app:layout_constraintStart_toEndOf="@+id/Email"
@@ -110,8 +108,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
         android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
         android:text="Anotações"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_text" />
@@ -126,7 +124,7 @@
         android:ems="10"
         android:inputType="textCapSentences|textMultiLine"
         app:layout_constraintBaseline_toBaselineOf="@+id/note_label"
-        app:layout_constraintStart_toEndOf="@+id/note_label"/>
+        app:layout_constraintStart_toEndOf="@+id/note_label" />
 
     <TextView
         android:id="@+id/delivery_label"
@@ -145,8 +143,8 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/delivery_label">
@@ -156,21 +154,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="Serviço de mensageiro no mesmo dia" />
+            android:text="@string/same_day_messenger_service" />
 
         <RadioButton
             android:id="@+id/nextday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="Entrega no dia seguinte" />
+            android:text="@string/next_day_ground_delivery" />
 
         <RadioButton
             android:id="@+id/pickup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
-            android:text="Retirar na loja" />
+            android:text="@string/pick_up" />
     </RadioGroup>
+
+    <Spinner
+        android:id="@+id/label_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone_text"
+        app:layout_constraintTop_toBottomOf="@+id/address_text" />
 
 </android.support.constraint.ConstraintLayout>
