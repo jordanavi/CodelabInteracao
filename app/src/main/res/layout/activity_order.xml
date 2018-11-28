@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".OrderActivity">
 
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/name"
+        app:layout_constraintTop_toBottomOf="@+id/order_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UnknownId"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="@string/digite_seu_nome"
+        app:layout_constraintBaseline_toBaselineOf="@+id/name_label"
+        app:layout_constraintStart_toEndOf="@+id/name_label"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="56dp"
+        android:autofillHints="" />
+
 </android.support.constraint.ConstraintLayout>
